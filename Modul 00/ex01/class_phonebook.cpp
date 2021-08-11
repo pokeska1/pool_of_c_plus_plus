@@ -6,7 +6,7 @@
 /*   By: jmarian <jmarian@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 14:07:50 by jmarian           #+#    #+#             */
-/*   Updated: 2021/08/11 11:58:47 by jmarian          ###   ########.fr       */
+/*   Updated: 2021/08/11 12:13:14 by jmarian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	Phone:: serch_phone(void)
 	top_of_search_tab(0);
 	if (full[0] == 0)
 	{
-		std::cout << "There are currently no contacts." << std::endl;
+		std::cout << "\e[0;35mThere are currently no contacts.\e[0m" << std::endl;
 		return ;
 	}
 	while (full[i] == 1 && i < 8)
@@ -120,7 +120,7 @@ void	Phone:: serch_phone(void)
 		std::cout << "\n";
 	}
 	floor_of_search_tab();
-	std::cout << "What id do you want to see: ";
+	std::cout << "\e[0;35mWhat id do you want to see: \e[0m";
 	result = getline(std::cin, str);
 	if (str[0] >= 48 && str[0] <= 57)
 		len = std::stoi(str);
