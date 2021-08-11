@@ -6,24 +6,42 @@
 /*   By: jmarian <jmarian@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 14:07:50 by jmarian           #+#    #+#             */
-/*   Updated: 2021/08/11 12:13:14 by jmarian          ###   ########.fr       */
+/*   Updated: 2021/08/11 12:37:22 by jmarian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.h"
 
+void	Phone:: cntr_d(bool result)
+{
+	if (!result)
+	{
+		std::cout << "\e[0;36msee you later\e[0m" << std::endl;
+		exit(1);
+	}
+	else
+		return ;
+}
+
 void	Phone:: add_phone(int num_cont)
 {
+	bool result;
+	
 	std::cout << "first name:" << "\n";
-	getline(std::cin, first_name[num_cont]);
+	result = getline(std::cin, first_name[num_cont]);
+	cntr_d(result);
 	std::cout << "last name:" << "\n";
-	getline(std::cin, last_name[num_cont]);
+	result = getline(std::cin, last_name[num_cont]);
+	cntr_d(result);
 	std::cout << "nickname:" << "\n";
-	getline(std::cin, nickname[num_cont]);
+	result = getline(std::cin, nickname[num_cont]);
+	cntr_d(result);
 	std::cout << "phone number:" << "\n";
-	getline(std::cin, phone_number[num_cont]);
+	result = getline(std::cin, phone_number[num_cont]);
+	cntr_d(result);
 	std::cout << "darkest secret:" << "\n";
-	getline(std::cin, darkest_secret[num_cont]);
+	result = getline(std::cin, darkest_secret[num_cont]);
+	cntr_d(result);
 	full[num_cont] = 1;
 }
 
@@ -49,18 +67,18 @@ void	Phone:: top_of_search_tab(int slechn)
 	while (slechn-- > 0)
 		std::cout << std::endl;
 	len = 0;
-	while (len++ != 66)
+	while (len++ != (4 * 11))
 		std::cout << "_";
 	std::cout << std::endl;
 	serch_str_more_ten("id", strlen("id"));
 	serch_str_more_ten("first name", strlen("first name"));
 	serch_str_more_ten("last name", strlen("last name"));
 	serch_str_more_ten("nickname", strlen("nickname"));
-	serch_str_less_ten("phone number", strlen("phone number"));
-	serch_str_less_ten("darkest secret", strlen("darkest secret"));
+	// serch_str_less_ten("phone number", strlen("phone number"));
+	// serch_str_less_ten("darkest secret", strlen("darkest secret"));
 	len = 0;
 	std::cout << std::endl;
-	while (len++ != 66)
+	while (len++ != (4 * 11))
 		std::cout << "¯";
 	std::cout << std::endl;
 }
@@ -71,7 +89,7 @@ void	Phone:: floor_of_search_tab(void)
 
 	len = 0;
 	std::cout << std::endl;
-	while (len++ != 66)
+	while (len++ != (4 * 11))
 		std::cout << "¯";
 	std::cout << std::endl;
 }
@@ -87,10 +105,11 @@ void	Phone:: serch_phone(void)
 
 	i = 0;
 	mimik = 0;
+	len = 0;
 	top_of_search_tab(0);
 	if (full[0] == 0)
 	{
-		std::cout << "\e[0;35mThere are currently no contacts.\e[0m" << std::endl;
+		std::cout << "\e[0;31mThere are currently no contacts.\e[0m" << std::endl;
 		return ;
 	}
 	while (full[i] == 1 && i < 8)
@@ -108,14 +127,14 @@ void	Phone:: serch_phone(void)
 			serch_str_more_ten(nickname[i], nickname[i].size());
 		else
 			serch_str_less_ten(nickname[i], nickname[i].size());
-		if (phone_number[i].size() < 10)
-			serch_str_more_ten(phone_number[i], phone_number[i].size());
-		else
-			serch_str_less_ten(phone_number[i], phone_number[i].size());
-		if (darkest_secret[i].size() < 10)
-			serch_str_more_ten(darkest_secret[i], darkest_secret[i].size());
-		else
-			serch_str_less_ten(darkest_secret[i], darkest_secret[i].size());
+		// if (phone_number[i].size() < 10)
+		// 	serch_str_more_ten(phone_number[i], phone_number[i].size());
+		// else
+		// 	serch_str_less_ten(phone_number[i], phone_number[i].size());
+		// if (darkest_secret[i].size() < 10)
+		// 	serch_str_more_ten(darkest_secret[i], darkest_secret[i].size());
+		// else
+		// 	serch_str_less_ten(darkest_secret[i], darkest_secret[i].size());
 		i++;
 		std::cout << "\n";
 	}
@@ -124,8 +143,13 @@ void	Phone:: serch_phone(void)
 	result = getline(std::cin, str);
 	if (str[0] >= 48 && str[0] <= 57)
 		len = std::stoi(str);
-	if (!result || str == "EXIT")
-		exit(1);
+	else if (!result || str == "EXIT")
+		cntr_d(0);
+	if (str[0] < 48 || str[0] > 57 || full[len - 1] == 0)
+	{
+		std::cout << "\e[0;35mthere is no such id.\e[0m" << std::endl;
+		return ;
+	}
 	if (len - 1 < 8 && full[len - 1] == 1)
 	{
 		std::cout << "id\t\t" << len << std::endl;

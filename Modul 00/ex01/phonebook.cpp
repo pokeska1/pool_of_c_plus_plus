@@ -6,7 +6,7 @@
 /*   By: jmarian <jmarian@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 09:40:49 by jmarian           #+#    #+#             */
-/*   Updated: 2021/08/11 12:12:58 by jmarian          ###   ########.fr       */
+/*   Updated: 2021/08/11 12:31:09 by jmarian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(void)
 		result = getline(std::cin, str);
 		if (str == "EXIT" || !result)
 		{
-			std::cout << "\e[0;35msee you later\e[0m" << std::endl;
+			std::cout << "\e[0;36msee you later\e[0m" << std::endl;
 			return(0);
 		}
 		else if (str != "SEARCH" && str != "ADD")
