@@ -2,24 +2,28 @@ CC		= clang++
 
 FLAG	= -g -Wall -Wextra -Werror
 
-SRCS	= megaphone.cpp
+OBJC =		$(SRCS:.cpp=.o)
 
 NAME	= megaphone
+
+SRCS	= megaphone.cpp
 
 RM		= rm -f
 
 all:		$(NAME)
 
-$(NAME) :
-			$(CC) $(FLAG) $(SRCS) -o $(NAME)
+$(NAME) : $(OBJC)
+			$(CC) $(FLAG) $(OBJC) -o $(NAME)
 
-fclean:
+%.o:	%.cpp
+			$(CC) -c $(FLAG) $< -o $@
+
+clean:
+			$(RM) $(OBJC)
+
+fclean: clean
 			$(RM) $(NAME)
 
 re:			fclean all
 
-.PHONY:		all clan fclean re
-
-
-
-
+.PHONY:		all clean fclean re

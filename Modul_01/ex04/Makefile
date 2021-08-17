@@ -1,17 +1,19 @@
-CC		= clang++ -std=c++98
+CC		= clang++ -Wc++98-compat-pedantic
 
 FLAG	= -g -Wall -Wextra -Werror
 
 OBJC =		$(SRCS:.cpp=.o)
 
-NAME	= phonebook
+NAME	= replace
 
-SRCS	=	phonebook.cpp			\
-			class_phonebook.cpp
+SRCS	=	main.cpp			\
+			class.cpp
+
+
 
 RM		= rm -f
 
-all:		$(NAME) phonebook.h
+all:		$(NAME) class.hpp
 
 $(NAME) : $(OBJC)
 			$(CC) $(FLAG) $(OBJC) -o $(NAME)

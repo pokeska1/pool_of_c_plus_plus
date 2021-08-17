@@ -4,14 +4,15 @@ FLAG	= -g -Wall -Wextra -Werror
 
 OBJC =		$(SRCS:.cpp=.o)
 
-NAME	= phonebook
+NAME	= Zombie
 
-SRCS	=	phonebook.cpp			\
-			class_phonebook.cpp
+SRCS	=	main.cpp			\
+			Zombie.cpp			\
+			ZombieHorde.cpp		\
 
 RM		= rm -f
 
-all:		$(NAME) phonebook.h
+all:		$(NAME) Zombie.hpp
 
 $(NAME) : $(OBJC)
 			$(CC) $(FLAG) $(OBJC) -o $(NAME)

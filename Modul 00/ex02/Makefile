@@ -1,10 +1,10 @@
 CC		= clang++
 
-FLAG	= -g ##p-Wall -Wextra -Werror
+FLAG	= -g -Wall -Wextra -Werror
 
 OBJC =		$(SRCS:.cpp=.o)
 
-NAME	= phonebook
+NAME	= Account
 
 SRCS	=	tests.cpp			\
 			Account.cpp
