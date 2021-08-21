@@ -12,10 +12,10 @@ Fixed::Fixed()
 
 Fixed & Fixed::operator = (const Fixed &same_class)
 {
-std::cout << "Assignation operator called" << std::endl;
-this->number = same_class.number;
-setRawBits(same_class.getRawBits());
-return(*this);
+    std::cout << "Assignation operator called" << std::endl;
+    this->number = same_class.number;
+    setRawBits(same_class.getRawBits());
+    return(*this);
 }
 
 
