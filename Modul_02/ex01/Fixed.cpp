@@ -42,7 +42,7 @@ Fixed &Fixed::operator=(Fixed const &same_class)
 
 std::ostream & operator << (std::ostream  &out, Fixed const & same_class)
 {
-    out << same_class.toInt();
+    out << same_class.toFloat();
     return (out);
 }
 

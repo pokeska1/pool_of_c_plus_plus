@@ -19,7 +19,7 @@ Fixed & Fixed::operator = (const Fixed &same_class)
 }
 
 
-Fixed::Fixed(Fixed const &same_class)
+Fixed::Fixed(const Fixed &same_class)
 {
     std::cout << "Copy constructor called" << std::endl;
     this->number = same_class.number;

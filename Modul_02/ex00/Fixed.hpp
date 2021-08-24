@@ -9,7 +9,7 @@
 class Fixed{
 public:
     Fixed();
-    Fixed(Fixed const &same_class);
+    Fixed(const Fixed &same_class);
     ~Fixed();
     int getRawBits( void ) const;
     void setRawBits( int const raw );

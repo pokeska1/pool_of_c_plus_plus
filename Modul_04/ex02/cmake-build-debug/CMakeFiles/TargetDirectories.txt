@@ -1,0 +1,3 @@
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex02/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex02/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex02/cmake-build-debug/CMakeFiles/ex02.dir

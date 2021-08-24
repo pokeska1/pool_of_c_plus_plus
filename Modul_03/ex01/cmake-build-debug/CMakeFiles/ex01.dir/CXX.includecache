@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ClapTrap.cpp
+ClapTrap.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ClapTrap.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ClapTrap.hpp
+iostream
+-
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ScavTrap.cpp
+ScavTrap.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ScavTrap.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ScavTrap.hpp
+ClapTrap.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ClapTrap.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/main.cpp
+ClapTrap.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ClapTrap.hpp
+ScavTrap.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_03/ex01/ScavTrap.hpp
+
