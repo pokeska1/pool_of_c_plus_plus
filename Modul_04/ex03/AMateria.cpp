@@ -4,22 +4,40 @@
 
 #include "AMateria.hpp"
 
-AMateria(std::string const & type)
+AMateria::AMateria()
 {
-
+    type = "void";
 }
 
-AMateria* clone() const
+AMateria::AMateria(AMateria const &amat)
 {
-
+    type = amat.type;
 }
 
-void use(ICharacter& target)
-{
+AMateria::~AMateria(){}
 
+AMateria::AMateria(std::string const & type)
+{
+    this->type = type;
 }
 
-std::string const & getType() const
+AMateria::AMateria* clone() const
 {
+    return(new AMateria);
+}
 
+void AMateria::use(ICharacter& target)
+{
+    std::string << "i can't use anything on " << target << std::endl;
+}
+
+std::string const & AMateria::getType() const
+{
+    return(this->type);
+}
+
+AMateria &AMateria::operator=(AMateria const &amat)
+{
+    type = amat.type;
+    return(*this);
 }

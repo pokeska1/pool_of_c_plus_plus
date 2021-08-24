@@ -9,15 +9,20 @@
 
 class Character : public ICharacter {
 public:
-    void unequip(void);
-    void (, ICharacter&);
+    Character();
+    Character(std::string const &name);
+    Character(Character const & charc);
+    ~Character();
 
-
-    ~Character() {}
-    std::string const & getName() const;
     void equip(AMateria* m);
     void unequip(int idx);
-    void use(int idx, Character& target);
+    void use(int idx, ICharacter& target);
+
+    std::string const & getName() const;
+    Character &operator=(Character const & charc);
+protected:
+    std::string name;
+    AMateria** bag;
 };
 
 

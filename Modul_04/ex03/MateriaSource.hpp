@@ -2,16 +2,16 @@
 // Created by Jeannetta Marian on 8/24/21.
 //
 
-#ifndef EX03_IMATERIASOURCE_HPP
-#define EX03_IMATERIASOURCE_HPP
+#ifndef EX03_MATERIASOURCE_HPP
+#define EX03_MATERIASOURCE_HPP
 
-#include "AMateria.hpp"
+#include "IMateriaSource.hpp"
 
-class IMateriaSource {
-public:
+class MateriaSource {
     virtual ~IMateriaSource() {}
     virtual void learnMateria(AMateria*) = 0;
     virtual AMateria* createMateria(std::string const & type) = 0;
 };
 
-#endif //EX03_IMATERIASOURCE_HPP
+
+#endif //EX03_MATERIASOURCE_HPP

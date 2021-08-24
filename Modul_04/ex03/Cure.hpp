@@ -5,6 +5,7 @@
 #ifndef EX03_CURE_HPP
 #define EX03_CURE_HPP
 
+#include "AMateria.hpp"
 
 class Cure : public AMateria{
 public:
@@ -12,6 +13,7 @@ public:
     Cure(Cure const &cure);
     ~Cure();
     AMateria* clone() const;
+    void use(ICharacter& target);
     Cure &operator=(Cure const &cure);
 };
 
