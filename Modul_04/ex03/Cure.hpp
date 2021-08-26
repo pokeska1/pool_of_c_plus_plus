@@ -7,12 +7,13 @@
 
 #include "AMateria.hpp"
 
-class Cure : public AMateria{
+class Cure : virtual public AMateria{
 public:
     Cure();
     Cure(Cure const &cure);
     ~Cure();
     AMateria* clone() const;
+    void setType(std::string const &type);
     void use(ICharacter& target);
     Cure &operator=(Cure const &cure);
 };

@@ -8,6 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/AMateria.cpp" "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/cmake-build-debug/CMakeFiles/ex03.dir/AMateria.cpp.o"
+  "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Character.cpp" "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/cmake-build-debug/CMakeFiles/ex03.dir/Character.cpp.o"
+  "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Cure.cpp" "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/cmake-build-debug/CMakeFiles/ex03.dir/Cure.cpp.o"
+  "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Ice.cpp" "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/cmake-build-debug/CMakeFiles/ex03.dir/Ice.cpp.o"
+  "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/MateriaSource.cpp" "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/cmake-build-debug/CMakeFiles/ex03.dir/MateriaSource.cpp.o"
   "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/main.cpp" "/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/cmake-build-debug/CMakeFiles/ex03.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

@@ -7,10 +7,18 @@
 
 #include "IMateriaSource.hpp"
 
-class MateriaSource {
-    virtual ~IMateriaSource() {}
-    virtual void learnMateria(AMateria*) = 0;
-    virtual AMateria* createMateria(std::string const & type) = 0;
+class AMateria;
+
+class MateriaSource : public IMateriaSource {
+public:
+    MateriaSource();
+    MateriaSource(MateriaSource const &maso);
+    ~MateriaSource();
+    void learnMateria(AMateria* am);
+    AMateria* createMateria(std::string const & type);
+    MateriaSource &operator=(MateriaSource const &maso);
+protected:
+    AMateria **bag;
 };
 
 

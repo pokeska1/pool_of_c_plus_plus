@@ -11,7 +11,7 @@ Ice::Ice()
 
 Ice::Ice(Ice const &ice)
 {
-    type = ice.type;
+    type = ice.getType();
 }
 
 Ice::~Ice(){}
@@ -21,13 +21,18 @@ AMateria* Ice::clone() const
     return (new Ice);
 }
 
-void use(ICharacter& target)
+void Ice::setType(std::string const &type)
+{
+    this->type = type;
+}
+
+void Ice::use(ICharacter& target)
 {
     std::cout << "* heals "<< target.getName() <<" wounds *" << std::endl;
 }
 
-Ice &Ice::operator=(Ice const &cure)
+Ice &Ice::operator=(Ice const &ice)
 {
-    type = ice.type;
+    type = ice.getType();
     return(*this);
 }

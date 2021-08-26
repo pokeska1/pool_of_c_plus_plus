@@ -80,6 +80,42 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/AMateria.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/AMateria.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Character.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Character.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Cure.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Cure.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/ICharacter.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/IMateriaSource.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Ice.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/Ice.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/MateriaSource.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/MateriaSource.hpp">
+			<Option target="ex03"/>
+		</Unit>
 		<Unit filename="/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_04/ex03/main.cpp">
 			<Option target="ex03"/>
 		</Unit>

@@ -21,10 +21,16 @@ AMateria* Cure::clone() const
     return (new Cure);
 }
 
-void use(ICharacter& target)
+void Cure::use(ICharacter& target)
 {
     std::cout << "* heals "<< target.getName() <<" wounds *" << std::endl;
 }
+
+void Cure::setType(std::string const &type)
+{
+    this->type = type;
+}
+
 
 Cure &Cure::operator=(Cure const &cure)
 {

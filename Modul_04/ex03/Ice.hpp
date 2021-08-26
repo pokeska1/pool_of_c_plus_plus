@@ -7,13 +7,16 @@
 
 #include "AMateria.hpp"
 
-class Ice : public AMateria{
+
+class ICharacter;
+class Ice : virtual public AMateria{
 public:
     Ice();
     Ice(Ice const &ice);
     ~Ice();
     AMateria* clone() const;
     void use(ICharacter& target);
+    void setType(std::string const &type);
     Ice &operator=(Ice const &cure);
 };
 

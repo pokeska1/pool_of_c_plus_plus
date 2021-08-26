@@ -4,20 +4,23 @@ FLAG	= -g -Wall -Wextra -Werror -Wshadow -Wno-shadow
 
 OBJC =		$(SRCS:.cpp=.o)
 
-NAME	= Animal
+NAME	= Game
 
 SRCS	=	main.cpp			\
-			Dog.cpp				\
-			Cat.cpp				\
-			Animal.cpp			\
-			Brain.cpp			\
+			AMateria.cpp		\
+			Character.cpp		\
+			Cure.cpp			\
+			Ice.cpp				\
+			MateriaSource.cpp	\
+
+
 
 
 RM		= rm -f
 
 all:		$(NAME)
 
-$(NAME) : $(OBJC) Animal.hpp Cat.hpp Dog.hpp Brain.hpp
+$(NAME) : $(OBJC) ICharacter.hpp MateriaSource.hpp IMateriaSource.hpp Ice.hpp Cure.hpp AMateria.hpp Character.hpp
 			$(CC) $(FLAG) $(OBJC) -o $(NAME)
 
 %.o:	%.cpp
