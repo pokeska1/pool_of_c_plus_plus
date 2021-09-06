@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/A.hpp
+Base.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/Base.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/B.hpp
+Base.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/Base.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/Base.hpp
+iostream
+-
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/C.hpp
+Base.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/Base.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/main.cpp
+iostream
+-
+ctime
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/ctime
+A.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/A.hpp
+B.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/B.hpp
+C.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex02/C.hpp
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex01/Data.cpp
+Data.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex01/Data.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex01/Data.hpp
+iostream
+-
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex01/main.cpp
+iostream
+-
+Data.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_06/ex01/Data.hpp
+

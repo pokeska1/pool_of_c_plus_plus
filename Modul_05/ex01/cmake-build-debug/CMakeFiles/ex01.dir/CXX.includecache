@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_05/ex01/Bureaucrat.hpp
+Form.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_05/ex01/Form.hpp
+iostream
+-
+string
+-
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_05/ex01/Form.hpp
+Bureaucrat.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_05/ex01/Bureaucrat.hpp
+iostream
+-
+string
+-
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_05/ex01/main.cpp
+iostream
+-
+string
+-
+Form.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_05/ex01/Form.hpp
+
