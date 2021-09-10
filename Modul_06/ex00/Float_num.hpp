@@ -10,8 +10,8 @@
 class Float_num : public Needed {
 public:
     Float_num();
-    Float_num(std::string const &str, int const &flag);
-    Float_num(float const &str, int const &flag);
+    Float_num(std::string const &str);
+    Float_num(float const &str);
     ~Float_num();
     Float_num(const Float_num & fl);
     void transform();

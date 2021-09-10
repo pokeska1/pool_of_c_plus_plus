@@ -26,6 +26,7 @@ public:
 
     virtual void setDouble(const double &d);
     virtual const double &getDouble();
+    int checker(std::string const &arv);
 protected:
     std::string name;
     char chr;
@@ -33,7 +34,7 @@ protected:
     bool impossible;
     double d;
     int num;
-    int flag;
+    bool dot_zero;
 };
 std::ostream &operator<< (std::ostream  &out, Needed & need);
 #endif //EX00_NEEDE_HPP

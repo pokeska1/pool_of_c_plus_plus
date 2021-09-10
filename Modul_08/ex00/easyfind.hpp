@@ -5,24 +5,22 @@
 #ifndef EX00_EASYFIND_HPP
 #define EX00_EASYFIND_HPP
 
-#include <algorithm>
 #include <vector>
 #include <iostream>
-#include <array>
 
 template<typename T>
-void easyfind(T &a, int n)
+typename T::iterator easyfind(T a, int n)
 {
-    int *p;
-   p = std::find(a, n);
-   if (*p != n)
-       throw std::logic_error ("Don't find");
-   std::cout << "Yes!\n";
-
-//    for(int i = 0; i < static_cast<int>(sizeof(a)); i++)
-//        if (a[i] == n)
-//            return 1;
-//
+    typename T::iterator it_start;
+    it_start = a.begin();
+    typename T::iterator it_end = a.end();
+    while(it_start < it_end)
+    {
+        if(*it_start == n)
+            return(it_start);
+        it_start++;
+    }
+    throw std::logic_error("Don't find");
 }
 
 #endif //EX00_EASYFIND_HPP

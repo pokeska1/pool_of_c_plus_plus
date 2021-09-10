@@ -13,8 +13,8 @@
 class Integer : public Needed {
 public:
     Integer();
-    Integer(std::string const &str, int const &flag);
-    Integer(int const &str, int const &flag);
+    Integer(std::string const &str);
+    Integer(int const &str);
     ~Integer();
     Integer(const Integer & num);
     void transform();

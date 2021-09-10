@@ -9,49 +9,30 @@ Integer::Integer(){
     name = "Int";
 }
 
-Integer::Integer(int const &str, int const &flag): Needed()
+Integer::Integer(int const &str): Needed()
 {
-    if (flag)
-    {
-        this->num = 0;
-        name = "impossible";
-        impossible = false;
-        return ;
-    }
     this->num = str;
     impossible = true;
     name = "Int";
 }
 
-Integer::Integer(std::string const &str, int const &flag) : Needed()
+Integer::Integer(std::string const &str) : Needed()
 {
-
-   // this->num = std::stoi(str);
-    int len = str.length();
-    int minus = 1;
-    if (flag)
-    {
-        this->num = 0;
-        name = "impossible";
-        impossible = false;
-        return ;
+    try{
+        if (!checker(str))
+        {
+            impossible = false;
+            name = "impossible";
+            return;
+        }
+        this->num = std::stoi(str);
+        impossible = true;
+        name = "Int";
     }
-
-   for(int i = 0; i < len && str[i] != '.' && str[i] != 'f'; i++)
-   {
-       if (str[i] == '-')
-       {
-           minus = -1;
-           continue;
-       }
-       else if (str[i] == '+')
-         continue;
-       this->num = this->num * 10 + (str[i] - 48);
-   }
-   if (minus == -1)
-       this->num *= -1;
-   impossible = true;
-    name = "Int";
+    catch (...) {
+        impossible = false;
+        name = "impossible";
+    }
 }
 
 Integer::~Integer(){}

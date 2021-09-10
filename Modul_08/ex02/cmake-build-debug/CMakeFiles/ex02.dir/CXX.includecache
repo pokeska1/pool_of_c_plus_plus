@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_08/ex02/main.cpp
+mutantstack.hpp
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_08/ex02/mutantstack.hpp
+
+/Users/jmarian/Desktop/21/4_lvl/C++/pool_of_c_plus_plus/Modul_08/ex02/mutantstack.hpp
+iostream
+-
+stack
+-
+

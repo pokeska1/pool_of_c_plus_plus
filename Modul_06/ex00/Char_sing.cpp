@@ -10,39 +10,38 @@ Char_sing::Char_sing(){
     num = -1;
 }
 
-Char_sing::Char_sing(std::string const &str, int const &flag) : Needed()
+Char_sing::Char_sing(std::string const &str) : Needed()
 {
-    int len = str.length();
-    int mimic = 0;
-    int minus = 1;
-    if (flag)
+    try
     {
-        this->chr = 0;
+        if (!checker(str))
+            throw(1);
+        int mimic = std::stoi(str);
+        if (!mimic || mimic < 0 || mimic > 128)
+        {
+            name = "impossible";
+            num = -1;
+            return ;
+        }
+        if ((mimic >= 0 && mimic <= 31) || mimic == 127 || mimic == 128)
+        {
+            name = "Non displayable";
+            num = -1;
+        }
+        else
+        {
+            name = "Char";
+            num = 1;
+
+            char chr = static_cast<char>(mimic);
+            this->chr = chr;
+        }
+    }
+    catch(...)
+    {
         name = "impossible";
         num = -1;
         return ;
-    }
-    for(int i = 0; i < len && str[i] != '.' && str[i] != 'f'; i++)
-    {
-        if((i == 0 && (str[i] == '+' || str[i] == '-')))
-        {
-            if (str[i] == '-')
-                minus = -1;
-            continue;
-        }
-        mimic = mimic * 10 + str[i] - 48;
-    }
-    char chr = static_cast<char>(mimic);
-    this->chr = chr;
-    if (chr <= 31 || chr >= 127 || minus == -1)
-    {
-        name = "Non displayable";
-        num = -1;
-    }
-    else
-    {
-        name = "Char";
-        num = 1;
     }
 }
 

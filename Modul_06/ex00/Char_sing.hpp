@@ -10,7 +10,7 @@
 class Char_sing : public Needed {
 public:
     Char_sing();
-    Char_sing(std::string const &chr, int const &flag);
+    Char_sing(std::string const &chr);
     ~Char_sing();
     Char_sing(const Char_sing & num);
     void transform();

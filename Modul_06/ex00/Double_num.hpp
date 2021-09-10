@@ -10,8 +10,8 @@
 class Double_num : public Needed {
 public:
     Double_num();
-    Double_num(std::string const &str, int const &flag);
-    Double_num(double const &str, int const &flag);
+    Double_num(std::string const &str);
+    Double_num(double const &str);
     ~Double_num();
     Double_num(const Double_num & d);
     void transform();
